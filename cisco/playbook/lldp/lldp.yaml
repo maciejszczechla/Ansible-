@@ -1,5 +1,5 @@
 ---
-- name: Cisco show version example
+- name: Cisco show version example spr
   hosts: cisco
   gather_facts: false
   connection: network_cli
