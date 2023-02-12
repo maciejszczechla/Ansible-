@@ -1,0 +1,12 @@
+[cisco]
+
+cisrt1002.kalivpn.pl 
+10.1.1.2 
+10.0.0.5
+10.0.0.6
+
+[cisco:vars]
+ansible_network_os=ios
+ansible_user=mszczechla
+ansible_password=Makofinal10
+ansible_connection=network_cli

@@ -1,0 +1,15 @@
+---
+- name: Cisco show version example
+  hosts: cisco
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: banner
+      cisco.ios.ios_banner:
+        banner: login
+        text: |
+          ######################################################################
+          !!!!!!!!!!!!!!!!! DOSTEP TYLKO DLA BLACK ADMIN !!!!!!!!!!!!!!!!!!!!!!!
+          ######################################################################
+        state: present

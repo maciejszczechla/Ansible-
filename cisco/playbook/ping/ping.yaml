@@ -1,0 +1,10 @@
+---
+- name: Cisco Ping
+  hosts: cisco
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: configure interface settings
+      cisco.ios.ios_ping:
+        dest: 10.1.1.1

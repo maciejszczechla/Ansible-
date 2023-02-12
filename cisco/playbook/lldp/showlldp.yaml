@@ -1,0 +1,15 @@
+---
+- name: Cisco show version example
+  hosts: cisco
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: show lldp 
+      ios_command:
+        commands: show lldp neig
+      register: output
+
+    - name: print output
+      debug:
+         var: output.stdout_lines

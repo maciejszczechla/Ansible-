@@ -1,0 +1,15 @@
+---
+- name: Cisco show version example
+  hosts: cisco
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+    - name: Merge provided configuration with device configuration
+      cisco.ios.ios_lldp_global:
+        config:
+          holdtime: 10
+          enabled: true
+          reinit: 3
+          timer: 10
+        state: merged

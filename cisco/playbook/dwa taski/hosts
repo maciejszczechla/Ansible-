@@ -1,0 +1,9 @@
+[cisco]
+10.0.0.5 ansible_ssh_common_arg="-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o StrictHostKeyChecking=no"
+10.0.0.6 ansible_ssh_common_arg="-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o StrictHostKeyChecking=no"
+
+[cisco:vars]
+ansible_network_os=ios
+ansible_user=lolszak
+ansible_password=password
+ansible_connection=network_cli
