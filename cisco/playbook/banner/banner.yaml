@@ -1,5 +1,5 @@
 ---
-- name: Cisco show version example
+- name: Cisco show version example2
   hosts: cisco
   gather_facts: false
   connection: network_cli
@@ -12,4 +12,4 @@
           ######################################################################
           !!!!!!!!!!!!!!!!! DOSTEP TYLKO DLA BLACK ADMIN !!!!!!!!!!!!!!!!!!!!!!!
           ######################################################################
-        state: present
+        state: present$%^^&^&&^^^^
