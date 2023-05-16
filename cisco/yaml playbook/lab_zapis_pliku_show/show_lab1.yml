@@ -13,7 +13,7 @@
 
     - name: Print 
       debug:
-        msg: "{{ cli_result }}"\
+        msg: "{{ cli_result }}"
       
     - name: Zapisz do folderu
       file:
