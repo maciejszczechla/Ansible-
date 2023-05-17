@@ -2,7 +2,7 @@ datacenter:
   children:
     routers:
       hosts:
-        cisrt1003.blacklan.local:
+        cisrt1003.blacklan.local: 
         #10.1.1.24[6:8]:
         #cisrt1001.kalivpn.pl:
         #10.0.0.7:
@@ -15,4 +15,4 @@ datacenter:
     ansible_user: mszczechla
     ansible_password: Makofinal10
     ansible_connection: network_cli
-
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group14-sha1'
