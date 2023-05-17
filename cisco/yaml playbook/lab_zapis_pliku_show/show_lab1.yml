@@ -8,7 +8,7 @@
   tasks: 
     - name: Show int des | in  tu
       ios_command:
-        commands: "sho int des | in tu"
+        commands: "sho int des"
       register: cli_result
 
     - name: Print 
