@@ -1,5 +1,5 @@
-blacklan.local:
-  net:
+blacklan:
+  children:
     routers:
       hosts:
         cisrt1001.blacklan.local:
